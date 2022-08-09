@@ -1,6 +1,6 @@
 
 * {
-    Margin: 0;
+    margin: 0;
     padding: 0;
     font-family: "Open Sans";
 
@@ -37,15 +37,6 @@ html {
     font-size: 2rem;
 }
 
-
-
-
-a:hover {
-    color: rgb(255, 255, 255);
-}
-
-
-
 .header__logo {
     height: 10rem;
     width: 12rem;
@@ -60,15 +51,17 @@ main {
     width: 100%;
 }
 
-.scroll {
+.carouselContainer {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    padding: 7rem 0;
+   
 }
 
-.imgDulce {
-    width: 20%;
-    height: 20%;
+.carouselContainer h5 {
+    font-size: 43px;
+    color: #EA3253;
 }
 
 
@@ -125,21 +118,14 @@ main {
 
 .destacado {
         text-align: center;
+        justify-content: center;
         color:#EA3253;
-        font-size: 2rem;
+        font-size: 3rem;
         width: 100%;
         padding: 2rem 0;
 
 }
 
-.section__card1, .section__card2, .section__card3 {
-   
-    align-items: center;
-    margin: 0 2rem;
-    background-color: rgb(119, 119, 221);
-    width: 15rem;
-    height: 20rem;
-}
 
 .mazo {
     width: 80%;
@@ -149,8 +135,24 @@ main {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-   
+}
 
+.card1, .card2, .card3 {
+    border-radius: 1rem;
+    align-items: flex-start;
+    text-align:start;
+ }
+
+.cardTitulo {font-size: 16px;
+    color: #EA3253;
+    align-items: flex-start;
+    text-align:start;
+}
+
+.cardTexto {font-size: 23px;
+align-items: flex-start;
+text-align:start;
+color: #EA3253;
 }
 
 .boton1 {
@@ -171,7 +173,7 @@ main {
 .bannerPaleta {
     display: inline-block;
     width: 100%;
-    max-width: 1500px;
+    
 }
 
 .bannerPaleta img {
@@ -187,6 +189,7 @@ main {
     font-size: 1.6rem;
     font-weight:500;
     max-width: 90%;
+    margin: 2rem;
 }
 
 .sign {
@@ -195,7 +198,13 @@ main {
     font-size: 2.4rem;
     font-weight: bold;
     max-width: 90%;
+    margin: 0;
     
+}
+
+.verTodos {
+    color:#EA3253;
+    font-size: 14px;
 }
 
 /* FOOTER */
@@ -204,21 +213,20 @@ footer {
     background-color: #F6C4B9;
     color: #3E4181;
 }
-.misDatos {
-    list-style: none;
-    text-decoration: none;
-    display: flex;
+
+.colorIcono{
+    color: #3E4181;
+}
+
+.card1, .card2, .card3, .card4 {
+    
+    width: 30%;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
+    margin: 2rem;
+    padding: 1rem;
 }
 
-
-footer h3 {
-    color: #EA3253;
-    font-weight: 600;
-    font-family: "Open-Sans";
-    font-size: 1.5rem;
-}
 
 /* RESPONSIVE */
 
@@ -229,7 +237,7 @@ footer h3 {
         grid-template-rows: 1fr 1fr 1fr ;
     }
     .mazo {flex-direction: column;} 
-    .section__card1, .section__card2, .section__card3 {margin: 2rem 0;}
+    .card1, .card2, .card3 {margin: 2rem 0}
 }
 
 
@@ -278,19 +286,15 @@ main ul li a:hover {
     align-items: center;
     justify-content: center;
     width: 100%;
+    
+    
 }
 
 section div img {height: 150px;
 width:  200px;}
 
-.card1, .card2, .card3, .card4 {
-    
-    width: 30%;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem;
-    padding: 1rem;
-}
+
+.main__total {min-height: 64.5rem;}
 
 /* RESPONSIVE */
 
@@ -354,4 +358,33 @@ width:  200px;}
     .intro {margin: 0 0 3rem 0;
     max-width: 50%;}
 }
+
+
+/* NAV BAR */
+
+.loguito {width:10rem;
+            height: 8rem;
+            margin: 0;
+        }
+
+.fondoHeader {
+    background-color: #F6C4B9;
+    margin: 0;
+}        
+
+.fondoHeader a {
+        font-size: 20px;
+        color:#EA3253;
+        }
+
+.fondoHeader a:hover {color: white;}
+
+
+   
+
+.buscador {font-size: 1rem;
+font-family: "Open Sans";
+}
+    
+
 
