@@ -15,33 +15,7 @@ html {
 
 /* HEADER */
 
-.header {
-    background-color: #F6C4B9;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    
-}
 
-.headerMenu li {
-    display: inline-block;
-    margin: 0 2rem;
-    padding: 0.2rem 1rem;
-
-}
-
-.headerMenu a {
-    list-style-type: none;
-    text-decoration: none;
-    color: #EA3253;
-    font-size: 2rem;
-}
-
-.header__logo {
-    height: 10rem;
-    width: 12rem;
-
-}
 
 
 /* MAIN */
@@ -56,6 +30,7 @@ main {
     justify-content: center;
     align-items: center;
     padding: 7rem 0;
+   
    
 }
 
@@ -260,6 +235,7 @@ footer {
 
 }
 
+
 .subNav li {
     display: inline-block;
     margin: 0 2rem;
@@ -270,12 +246,14 @@ footer {
     text-decoration: none;
     list-style: none;
     color: #3E4181;
-
-    
 }
 
+
 main ul li a:hover {
-    text-underline-offset: 4rem;
+    text-decoration: underline;
+    text-decoration-color:#3E4181;
+    text-underline-offset: 0.5rem;
+    text-decoration-style:wavy ;
 }
 
 
@@ -289,6 +267,9 @@ main ul li a:hover {
     
     
 }
+
+.iconoWhatsapp {font-size: 2.5rem;
+font-weight: bold;}
 
 section div img {height: 150px;
 width:  200px;}
@@ -365,7 +346,14 @@ width:  200px;}
 .loguito {width:10rem;
             height: 8rem;
             margin: 0;
+            margin-right: 3rem;
         }
+
+.padd {
+        padding: 0 1.5rem;
+}        
+
+.dropdown-item:hover {background-color:#F6C4B9;}
 
 .fondoHeader {
     background-color: #F6C4B9;
@@ -384,6 +372,7 @@ width:  200px;}
 
 .buscador {font-size: 1rem;
 font-family: "Open Sans";
+width: 35rem
 }
     
 
