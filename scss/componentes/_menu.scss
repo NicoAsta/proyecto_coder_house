@@ -1,0 +1,59 @@
+.mainMenu {
+    min-height: 81vh;
+}
+
+.subNav {
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    li {
+        display: inline-block;
+        margin: 0 2rem;
+        padding: 1rem 2rem;
+    }
+
+    a {
+        text-decoration: none;
+        list-style: none;
+        color: nth($colors, 3 );
+            &:hover {
+                text-decoration: underline;
+                text-decoration-color:nth($colors, 3 );
+                text-underline-offset: 0.5rem;
+                text-decoration-style:wavy ;
+            }
+    }
+
+}
+
+.cardPadre {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+    
+}
+
+.iconoWhatsapp {font-size: 2.5rem;
+font-weight: bold;}
+
+section div img {height: 150px;
+width:  200px;}
+
+
+.main__total {min-height: 64.5rem;}
+
+@media screen and (max-width: 768px) {
+    .mainMenu {flex-direction: column;}
+    .cardPadre {flex-direction: column;}
+    .subNav li {
+        display: inline-block;
+        margin: 0 1rem;
+        padding: 1rem 2rem;
+}}

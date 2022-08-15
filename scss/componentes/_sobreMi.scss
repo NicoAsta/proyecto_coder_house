@@ -1,0 +1,47 @@
+.misGustos {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    min-height: 81vh;
+    
+}
+
+.fotoPerfil {
+    width: 30rem;
+    flex-flow: row wrap;
+    height: 30rem;
+    border-radius: 50px;
+    border:#EA3253 solid 1px;
+}
+
+.intro{
+    text-align: justify;
+    color: nth($colors, 3 );
+    flex-flow: row wrap;
+    font-size: 1.8rem;
+    padding: 0 2rem;
+    max-width: 85%;
+}
+
+.mainSobreMi {
+    display: flex;
+    flex-direction: column;
+    background-color: nth($colors, 1 );
+    width: 100%;
+    align-items: center;
+    
+}
+
+.main__video {
+    display: block;
+    background-color: aqua;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .misGustos{flex-direction: column;}
+    .fotoPerfil {margin: 3rem 0}
+    .intro {margin: 0 0 3rem 0;
+    max-width: 50%;}
+}

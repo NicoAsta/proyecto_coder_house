@@ -1,0 +1,19 @@
+{
+  "name": "nicolas_asta_pasteleria",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NicoAsta/proyecto_coder_house.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NicoAsta/proyecto_coder_house/issues"
+  },
+  "homepage": "https://github.com/NicoAsta/proyecto_coder_house#readme",
+  "description": ""
+}

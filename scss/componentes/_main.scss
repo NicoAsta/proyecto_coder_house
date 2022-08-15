@@ -1,0 +1,165 @@
+main {
+    background-color: nth($colors, 1 );
+    width: 100%;
+
+    @media screen and (max-width: 768px) {
+
+        .padreColumnas {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr ;
+        }
+        .mazo {flex-direction: column;} 
+        .card1, .card2, .card3 {margin: 2rem 0}
+    }
+}
+
+.carouselContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem 30rem;
+    
+        h5 {
+            font-size: 43px;
+            color: nth($colors, 2 );
+        }
+   
+}
+
+
+.columnaUno, .columnaDos, .columnaTres {
+    display: inline-block;
+    padding: 2rem 0;
+    width: 200px;
+    color: #3E4181;
+     
+}
+
+
+.columnaCenter {
+    text-align: center;
+}
+
+.columnaUno {
+    display:map-get($columna, tipo);
+    padding: map-get($columna, padd );
+    width: map-get($columna , ancho ) ;
+    color: map-get($columna , col );
+    
+}
+
+    p{
+    display: block;
+    font-family: "Open Sans";
+    color:nth($colors , 3 );
+    font-size: 1.7rem;
+    grid-area: columnaUno;
+    
+}
+
+.columnaDos
+    {
+        display:map-get($columna, tipo);
+        padding: map-get($columna, padd );
+        width: map-get($columna , ancho ) ;
+        color: map-get($columna , col );
+
+        p{
+
+    display: block;
+    font-family: "Open Sans";
+    color: nth($colors , 3 );
+    font-size: 1.7rem;
+    grid-area: columnaDos;
+}}
+
+.columnaTres 
+
+{ display:map-get($columna, tipo);
+    padding: map-get($columna, padd );
+    width: map-get($columna , ancho ) ;
+    color: map-get($columna , col );
+
+p{
+    display: block;
+    font-family: "Open Sans";
+    color: nth($colors , 3 );
+    font-size: 1.7rem;
+    grid-area: columnaTres;
+}}
+
+.mazo {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card1, .card2, .card3 {
+    border-radius: 1rem;
+    align-items: flex-start;
+    text-align:start;
+ }
+
+.cardTitulo {font-size: 1.6rem;
+    color: nth($colors , 2 );
+    align-items: flex-start;
+    text-align:start;
+}
+
+.cardTexto {font-size: 2.3rem;
+align-items: flex-start;
+text-align:start;
+color: nth($colors , 2 );
+}
+
+.boton1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.verTodos {
+    padding: 0.5rem 2rem;
+    border-radius: 16px;
+    border:#EA3253 solid 1px;
+    background-color: #ffffff;
+    text-align: center;
+    color:nth($colors , 3 );
+    font-size: 1.4rem;
+}
+
+
+
+.bannerPaleta {
+    display: inline-block;
+    width: 100%;
+    
+    img {
+        height: auto;
+        width: 100%;}
+}
+
+.finalText {
+    text-align: center;
+    color: nth($colors , 3 );
+    font-size: 1.6rem;
+    font-weight:500;
+    max-width: 90%;
+    margin: 2rem;
+}
+
+.sign {
+    color: nth($colors , 2 );
+    text-align: end;
+    font-size: 2.4rem;
+    font-weight: bold;
+    max-width: 90%;
+    margin: 0;
+    
+}
+

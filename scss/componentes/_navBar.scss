@@ -1,0 +1,28 @@
+.loguito {width:10rem;
+    height: 8rem;
+    margin: 0;
+    margin-right: 3rem;
+}
+
+.padd {
+padding: 0 1.5rem;
+}        
+
+.dropdown-item:hover {background-color:nth($colors, 1 );}
+
+.fondoHeader {
+background-color: nth($colors, 1 );
+margin: 0;
+
+a {
+    font-size: 20px;
+    color:nth($colors, 2 );
+    &:hover {color: white}
+    }
+}        
+
+
+.buscador {font-size: 1rem;
+font-family: "Open Sans";
+width: 35rem
+}
