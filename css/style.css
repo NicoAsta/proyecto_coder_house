@@ -1,18 +1,385 @@
-/* Error: Undefined variable.
- *    ,
- * 47 |     display:map-get($columna, tipo);
- *    |                     ^^^^^^^^
- *    '
- *   scss\componentes\_main.scss 47:21  @import
- *   scss\style.scss 2:9                root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 47 \2502      display:map-get($columna, tipo);\d\a    \2502                      ^^^^^^^^\a    \2575 \a   scss\\componentes\\_main.scss 47:21  @import\a   scss\\style.scss 2:9                root stylesheet";
+.loguito {
+  width: 10rem;
+  height: 8rem;
+  margin: 0;
+  margin-right: 3rem;
 }
+
+.padd {
+  padding: 0 1.5rem;
+}
+
+.dropdown-item:hover {
+  background-color: #EA3253;
+}
+
+.fondoHeader {
+  background-color: #F6C4B9;
+  margin: 0;
+}
+.fondoHeader a {
+  font-size: 20px;
+  color: #EA3253;
+}
+.fondoHeader a:hover {
+  color: white;
+}
+
+.buscador {
+  font-size: 1rem;
+  font-family: "Open Sans";
+  width: 35rem;
+}
+
+footer {
+  background-color: #F6C4B9;
+  color: #3E4181;
+}
+@media screen and (max-width: 768px) {
+  footer .padreColumnas {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  footer .mazo {
+    flex-direction: column;
+  }
+  footer .card1, footer .card2, footer .card3 {
+    margin: 2rem 0;
+  }
+}
+
+.colorIcono {
+  color: white !important;
+  text-decoration: none;
+  list-style: none;
+  font-size: 1.4rem;
+}
+
+.card1, .card2, .card3, .card4 {
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  padding: 1rem;
+}
+
+.boton1, .cardPadre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainMenu {
+  min-height: 83.7vh;
+}
+
+.subNav {
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.subNav li {
+  display: inline-block;
+  margin: 0 2rem;
+  padding: 1rem 2rem;
+}
+.subNav a {
+  text-decoration: none;
+  list-style: none;
+  color: #3E4181;
+}
+.subNav a:hover {
+  text-decoration: underline;
+  text-decoration-color: #3E4181;
+  text-underline-offset: 0.5rem;
+  text-decoration-style: wavy;
+}
+
+.titulo {
+  color: #EA3253;
+  padding: 3rem;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.cardPadre {
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.note {
+  font-size: large;
+  color: #3E4181;
+  max-width: 80%;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.main__total {
+  min-height: 64.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .mainMenu {
+    flex-direction: column;
+  }
+  .cardPadre {
+    flex-direction: column;
+  }
+  .subNav li {
+    display: inline-block;
+    margin: 0 1rem;
+    padding: 1rem 2rem;
+  }
+}
+.misGustos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 81vh;
+}
+
+.fotoPerfil {
+  width: 30rem;
+  flex-flow: row wrap;
+  height: 30rem;
+  border-radius: 50px;
+  border: #EA3253 solid 1px;
+}
+
+.intro {
+  text-align: justify;
+  color: #3E4181;
+  flex-flow: row wrap;
+  font-size: 1.8rem;
+  padding: 0 2rem;
+  max-width: 85%;
+}
+
+.mainSobreMi {
+  display: flex;
+  flex-direction: column;
+  background-color: #fce8e4;
+  width: 100%;
+  align-items: center;
+}
+
+.main__video {
+  display: block;
+  background-color: aqua;
+}
+
+@media screen and (max-width: 768px) {
+  .misGustos {
+    flex-direction: column;
+  }
+  .fotoPerfil {
+    margin: 3rem 0;
+  }
+  .intro {
+    margin: 0 0 3rem 0;
+    max-width: 50%;
+  }
+}
+main {
+  background-color: #fce8e4;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  main .padreColumnas {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  main .mazo {
+    flex-direction: column;
+  }
+  main .card1, main .card2, main .card3 {
+    margin: 2rem 0;
+  }
+}
+
+.carouselContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7rem 30rem;
+}
+.carouselContainer h5 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #EA3253;
+}
+.carouselContainer .flechita {
+  color: #EA3253;
+}
+
+.padreColumnas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.columnaUno, .columnaDos, .columnaTres {
+  display: inline-block;
+  padding: 2rem 0;
+  width: 200px;
+  color: #3E4181;
+}
+
+.columnaCenter {
+  text-align: center;
+}
+
+.columnaUno {
+  display: inline-block;
+  padding: 2rem 0;
+  width: 200px;
+  color: #3E4181;
+}
+.columnaUno p {
+  display: block;
+  font-family: "Open Sans";
+  color: #3E4181;
+  font-size: 1.7rem;
+  grid-area: columnaUno;
+}
+
+.columnaDos {
+  display: inline-block;
+  padding: 2rem 0;
+  width: 200px;
+  color: #3E4181;
+}
+.columnaDos p {
+  display: block;
+  font-family: "Open Sans";
+  color: #3E4181;
+  font-size: 1.7rem;
+  grid-area: columnaDos;
+}
+
+.columnaTres {
+  display: inline-block;
+  padding: 2rem 0;
+  width: 200px;
+  color: #3E4181;
+}
+.columnaTres p {
+  display: block;
+  font-family: "Open Sans";
+  color: #3E4181;
+  font-size: 1.7rem;
+  grid-area: columnaTres;
+}
+
+.destacado {
+  text-align: center;
+  justify-content: center;
+  color: #EA3253;
+  font-size: 3rem;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.mazo {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card1, .card2, .card3 {
+  border-radius: 1rem;
+  align-items: flex-start;
+  text-align: start;
+}
+
+.cardTitulo {
+  font-size: 1.6rem;
+  color: #EA3253;
+  align-items: flex-start;
+  text-align: start;
+}
+
+.cardTexto {
+  font-size: 2.3rem;
+  align-items: flex-start;
+  text-align: start;
+  color: #EA3253;
+}
+
+.boton1 {
+  padding: 2rem 0;
+}
+
+.verTodos {
+  padding: 0.5rem 2rem;
+  border-radius: 16px;
+  border: #EA3253 solid 1px;
+  background-color: #ffffff;
+  text-align: center;
+  color: #3E4181;
+  font-size: 1.4rem;
+}
+.verTodos a {
+  list-style: none;
+  text-decoration: none;
+  color: #3E4181;
+}
+
+.bannerPaleta {
+  display: inline-block;
+  width: 100%;
+}
+.bannerPaleta img {
+  height: auto;
+  width: 100%;
+}
+
+.finalText {
+  text-align: center;
+  color: #3E4181;
+  font-size: 1.6rem;
+  font-weight: 500;
+  max-width: 90%;
+  margin: 2rem;
+}
+
+.sign {
+  color: #EA3253;
+  text-align: end;
+  font-size: 2.4rem;
+  font-weight: bold;
+  max-width: 90%;
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.bordcard {
+  border-radius: 10%;
+}
+
+.ig {
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

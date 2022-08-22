@@ -49,6 +49,7 @@ main {
     flex-flow: row wrap;
     width: 100%;
     
+    
   }                          
 
 .columnaUno, .columnaDos, .columnaTres {
@@ -208,12 +209,14 @@ footer {
 @media screen and (max-width: 768px) {
 
     .padreColumnas {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr ;
     }
     .mazo {flex-direction: column;} 
     .card1, .card2, .card3 {margin: 2rem 0}
 }
+
+
 
 
 
@@ -276,6 +279,8 @@ width:  200px;}
 
 
 .main__total {min-height: 64.5rem;}
+
+
 
 /* RESPONSIVE */
 

@@ -20,12 +20,27 @@ main {
     padding: 7rem 30rem;
     
         h5 {
-            font-size: 43px;
+            font-size: 4rem;
+            font-weight: bold;
             color: nth($colors, 2 );
         }
-   
+        
+        .flechita {
+            color:#EA3253;
+        }
 }
 
+
+.padreColumnas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr ; 
+    justify-items: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+    
+  }      
 
 .columnaUno, .columnaDos, .columnaTres {
     display: inline-block;
@@ -46,7 +61,7 @@ main {
     width: map-get($columna , ancho ) ;
     color: map-get($columna , col );
     
-}
+
 
     p{
     display: block;
@@ -55,6 +70,7 @@ main {
     font-size: 1.7rem;
     grid-area: columnaUno;
     
+}
 }
 
 .columnaDos
@@ -88,6 +104,16 @@ p{
     grid-area: columnaTres;
 }}
 
+.destacado {
+        text-align: center;
+        justify-content: center;
+        color:#EA3253;
+        font-size: 3rem;
+        width: 100%;
+        padding: 2rem 0;
+
+}
+
 .mazo {
     width: 80%;
     margin: 0 auto;
@@ -117,11 +143,12 @@ color: nth($colors , 2 );
 }
 
 .boton1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %disposicion;
     padding: 2rem 0;
+
 }
+
+
 
 .verTodos {
     padding: 0.5rem 2rem;
@@ -131,9 +158,14 @@ color: nth($colors , 2 );
     text-align: center;
     color:nth($colors , 3 );
     font-size: 1.4rem;
+
+    a {
+        list-style: none;
+        text-decoration: none;
+        color: #3E4181;
+    }
+    
 }
-
-
 
 .bannerPaleta {
     display: inline-block;

@@ -1,0 +1,31 @@
+footer {
+    background-color: #F6C4B9;
+    color: #3E4181;
+
+    @media screen and (max-width: 768px) {
+
+        .padreColumnas {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr ;
+        }
+        .mazo {flex-direction: column;} 
+        .card1, .card2, .card3 {margin: 2rem 0}
+    }
+}
+
+.colorIcono{
+    color: white !important;
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.4rem;
+}
+
+.card1, .card2, .card3, .card4 {
+    
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    padding: 1rem;
+}
+
