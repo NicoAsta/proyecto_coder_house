@@ -12,6 +12,7 @@
     height: 30rem;
     border-radius: 50px;
     border:#EA3253 solid 1px;
+    margin-left: 4rem;
 }
 
 .intro{
@@ -33,9 +34,10 @@
 }
 
 .main__video {
-    display: block;
-    background-color: aqua;
-    // @include tamaño ( $ancho, $alto, $posicion)>>> Me tira error esta linea cuando quiero aplicar el Mixin, nose por que no me toma o el import o esto;
+    display: flex;
+    width: 1000px;
+    height: 130px;
+  
 }
 
 

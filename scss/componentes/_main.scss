@@ -39,6 +39,8 @@ main {
     align-items: center;
     flex-flow: row wrap;
     width: 100%;
+
+    .tamaño {font-size: 1.8rem;}
     
   }      
 
@@ -47,12 +49,14 @@ main {
     padding: 2rem 0;
     width: 200px;
     color: #3E4181;
+    
      
 }
 
 
 .columnaCenter {
     text-align: center;
+   
 }
 
 .columnaUno {
@@ -61,13 +65,15 @@ main {
     width: map-get($columna , ancho ) ;
     color: map-get($columna , col );
     
+    
+    
 
 
     p{
     display: block;
     font-family: "Open Sans";
     color:nth($colors , 3 );
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     grid-area: columnaUno;
     
 }
@@ -85,7 +91,7 @@ main {
     display: block;
     font-family: "Open Sans";
     color: nth($colors , 3 );
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     grid-area: columnaDos;
 }}
 
@@ -100,7 +106,7 @@ p{
     display: block;
     font-family: "Open Sans";
     color: nth($colors , 3 );
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     grid-area: columnaTres;
 }}
 
@@ -128,6 +134,7 @@ p{
     border-radius: 1rem;
     align-items: flex-start;
     text-align:start;
+   
  }
 
 .cardTitulo {font-size: 1.6rem;
@@ -179,10 +186,11 @@ color: nth($colors , 2 );
 .finalText {
     text-align: center;
     color: nth($colors , 3 );
-    font-size: 1.6rem;
-    font-weight:500;
+    font-size: 1.7rem;
+    // font-weight:500;
     max-width: 90%;
     margin: 2rem;
+    font-family: "Open Sans";
 }
 
 .sign {

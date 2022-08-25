@@ -2,6 +2,8 @@
     min-height: 83.7vh;
 }
 
+.mainMacaron {min-height: 84.1vh;}
+
 .subNav {
     display: flex;
     font-size: 1.5rem;
@@ -26,6 +28,7 @@
                 text-underline-offset: 0.5rem;
                 text-decoration-style:wavy ;
             }
+            
     }
 
 }
@@ -51,11 +54,13 @@
     color: nth($colors , 3 );
     max-width: 80%;
     text-align: center;
-    padding-top: 5rem ;
+    margin:  3rem ;
 }
 
-
-.main__total {min-height: 64.5rem;}
+.tamañoT {
+    text-align: center;
+    color: nth($colors , 3);
+}
 
 @media screen and (max-width: 768px) {
     .mainMenu {flex-direction: column;}

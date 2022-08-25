@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .loguito {
   width: 10rem;
   height: 8rem;
@@ -49,7 +50,7 @@ footer {
 }
 
 .colorIcono {
-  color: white !important;
+  color: #13154A !important;
   text-decoration: none;
   list-style: none;
   font-size: 1.4rem;
@@ -71,6 +72,10 @@ footer {
 
 .mainMenu {
   min-height: 83.7vh;
+}
+
+.mainMacaron {
+  min-height: 84.1vh;
 }
 
 .subNav {
@@ -115,11 +120,12 @@ footer {
   color: #3E4181;
   max-width: 80%;
   text-align: center;
-  padding-top: 5rem;
+  margin: 3rem;
 }
 
-.main__total {
-  min-height: 64.5rem;
+.tamañoT {
+  text-align: center;
+  color: #3E4181;
 }
 
 @media screen and (max-width: 768px) {
@@ -148,6 +154,7 @@ footer {
   height: 30rem;
   border-radius: 50px;
   border: #EA3253 solid 1px;
+  margin-left: 4rem;
 }
 
 .intro {
@@ -168,8 +175,9 @@ footer {
 }
 
 .main__video {
-  display: block;
-  background-color: aqua;
+  display: flex;
+  width: 1000px;
+  height: 130px;
 }
 
 @media screen and (max-width: 768px) {
@@ -225,6 +233,9 @@ main {
   flex-flow: row wrap;
   width: 100%;
 }
+.padreColumnas .tamaño {
+  font-size: 1.8rem;
+}
 
 .columnaUno, .columnaDos, .columnaTres {
   display: inline-block;
@@ -247,7 +258,7 @@ main {
   display: block;
   font-family: "Open Sans";
   color: #3E4181;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   grid-area: columnaUno;
 }
 
@@ -261,7 +272,7 @@ main {
   display: block;
   font-family: "Open Sans";
   color: #3E4181;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   grid-area: columnaDos;
 }
 
@@ -275,7 +286,7 @@ main {
   display: block;
   font-family: "Open Sans";
   color: #3E4181;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   grid-area: columnaTres;
 }
 
@@ -349,10 +360,10 @@ main {
 .finalText {
   text-align: center;
   color: #3E4181;
-  font-size: 1.6rem;
-  font-weight: 500;
+  font-size: 1.7rem;
   max-width: 90%;
   margin: 2rem;
+  font-family: "Open Sans";
 }
 
 .sign {
