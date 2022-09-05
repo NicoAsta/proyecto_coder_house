@@ -6,7 +6,8 @@
 
 .padd {
 padding: 0 1.5rem;
-}        
+color: nth($colors , 2 );
+}
 
 .dropdown-item:hover {background-color:nth($colors, 2 );}
 
@@ -16,13 +17,18 @@ margin: 0;
 
 a {
     font-size: 20px;
-    color:nth($colors, 2 );
     &:hover {color: white}
+    
     }
 }        
+
+.activeColor {color: #ffffff;} 
+
 
 
 .buscador {font-size: 1rem;
 font-family: "Open Sans";
 width: 35rem
 }
+
+.icon {color: nth($colors , 2 );}

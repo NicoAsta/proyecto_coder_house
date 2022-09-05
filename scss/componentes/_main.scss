@@ -9,7 +9,7 @@ main {
             grid-template-rows: 1fr 1fr 1fr ;
         }
         .mazo {flex-direction: column;} 
-        .card1, .card2, .card3 {margin: 2rem 0}
+        
     }
 }
 
@@ -17,7 +17,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 7rem 30rem;
+    // padding: 7rem 30rem;
     
         h5 {
             font-size: 4rem;
@@ -25,9 +25,6 @@ main {
             color: nth($colors, 2 );
         }
         
-        .flechita {
-            color:#EA3253;
-        }
 }
 
 
@@ -46,7 +43,7 @@ main {
 
 .columnaUno, .columnaDos, .columnaTres {
     display: inline-block;
-    padding: 2rem 0;
+    margin: 2rem;
     width: 200px;
     color: #3E4181;
     
@@ -61,7 +58,6 @@ main {
 
 .columnaUno {
     display:map-get($columna, tipo);
-    padding: map-get($columna, padd );
     width: map-get($columna , ancho ) ;
     color: map-get($columna , col );
     
@@ -82,7 +78,6 @@ main {
 .columnaDos
     {
         display:map-get($columna, tipo);
-        padding: map-get($columna, padd );
         width: map-get($columna , ancho ) ;
         color: map-get($columna , col );
 
@@ -98,7 +93,6 @@ main {
 .columnaTres 
 
 { display:map-get($columna, tipo);
-    padding: map-get($columna, padd );
     width: map-get($columna , ancho ) ;
     color: map-get($columna , col );
 
@@ -134,16 +128,18 @@ p{
     border-radius: 1rem;
     align-items: flex-start;
     text-align:start;
+    transition: all 400ms ease;
+    &:hover{box-shadow: 5px 5px 10px #EA3253;}
    
  }
 
-.cardTitulo {font-size: 1.6rem;
+.cardTitulo {font-size: 2rem;
     color: nth($colors , 2 );
     align-items: flex-start;
     text-align:start;
 }
 
-.cardTexto {font-size: 2.3rem;
+.cardTexto {font-size: 1.6rem;
 align-items: flex-start;
 text-align:start;
 color: nth($colors , 2 );

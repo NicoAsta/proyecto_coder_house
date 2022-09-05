@@ -20,6 +20,7 @@
     <script src="https://kit.fontawesome.com/fa69e6b850.js" crossorigin="anonymous"></script>
 
     <link rel="shortcut icon" href="../fotos-juli/logochiquito.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -35,7 +36,7 @@
 
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 colorNav">
                     <li><a href="../index.html" class="nav-link padd">Inicio</a></li>
-                    <li><a href="./menu.html" class="nav-link padd">Menu</a></li>
+                    <li><a href="./menu.html" class="nav-link padd activeColor">Menu</a></li>
                     <li><a href="./sobremi.html" class="nav-link padd">Sobre Mi</a></li>
                 </ul>
 
@@ -44,18 +45,18 @@
                 </form>
 
                 <div class="dropdown text-end">
-                    <a href="#" class="d-block text-decoration-none dropdown-toggle" data-bs-toggle="dropdown"
+                    <a href="#" class="d-block text-decoration-none dropdown-toggle icon" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
                     </a>
                     <ul class="dropdown-menu text-small">
 
 
-                        <li><a class="dropdown-item" href="#">Perfil</a></li>
+                        <li><a class="dropdown-item icon" href="#">Perfil</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
+                        <li><a class="dropdown-item icon" href="#">Cerrar Sesión</a></li>
                     </ul>
                 </div>
             </div>
@@ -70,16 +71,16 @@
             <ul>
 
                 <li><a href="./menu.html">Boxs</a></li>
-                <li><a href="./tortas.html">Tortas</a>
+                <li><a class="activeDeco" href="./tortas.html">Tortas</a>
                 </li>
                 <li><a href="./macarons.html">Macarons</a></li>
                 <li><a href="./otros.html">Otros</a></li>
             </ul>
         </nav>
 
-        <h1 class="titulo">Tortas </h1>
+        <h1 class="titulo animate__animated animate__backInDown">Tortas </h1>
 
-        <h3 class="tamañoT">Todas las tortas pueden perdirse en tamaño grande (G) o mediano (M). Pero ¿para qué elegir el mediano? ¿No?</h3>
+        <h3 class="tamañoT">Todas las tortas pueden perdirse en tamaño grande (G) que son 12 porciones o mediano (M) que son 8 porciones. Pero ¿para qué elegir el mediano? ¿No?</h3>
 
         <section class="cardPadre">
 
@@ -89,7 +90,7 @@
                         <img src="../fotos-juli/cardChocotorta.jpg" class="card-img-top bordcard" alt="Chocotorta">
                         <div class="card-body">
                             <h5 class="card-title cardTitulo">Chocotorta</h5>
-                            <p class="text-start cardTexto"> G:$3.600</p>
+                            <p class="text-start cardTexto"> G:$3.600 M:$3.100</p>
                             
                         </div>
                     </div>
@@ -98,7 +99,7 @@
                         <img src="../fotos-juli/card3.jpg" class="card-img-top bordcard" alt="Cheesecake de frutos rojos">
                         <div class="card-body">
                             <h5 class="card-title cardTitulo">Cheesecake Frutos Rojos</h5>
-                            <p class="text-start cardTexto">$3.700</p>
+                            <p class="text-start cardTexto">G:$3.700 M:$3.200</p>
 
                         </div>
                     </div>
@@ -107,7 +108,7 @@
                         <img src="../fotos-juli/cardCheeseP.jpg" class="card-img-top bordcard"   alt="Cheesecake de pistacho">
                         <div class="card-body">
                             <h5 class="card-title cardTitulo">Cheesecake de Pistacho</h5>
-                            <p class="text-start cardTexto">$4.000</p>
+                            <p class="text-start cardTexto">G:$4.000 M:$3.500</p>
 
                         </div>
                     </div>
@@ -116,7 +117,7 @@
                         <img src="../fotos-juli/cardRedV.jpg" class="card-img-top bordcard" alt="Red Velvet">
                         <div class="card-body">
                             <h5 class="card-title cardTitulo">Red Velvet</h5>
-                            <p class="text-start cardTexto">$3.600</p>
+                            <p class="text-start cardTexto">G:$3.600 M:$3.100</p>
 
                         </div>
                     </div>
@@ -125,7 +126,7 @@
                         <img src="../fotos-juli/cardBomba.jpg" class="card-img-top bordcard" alt="Bomba de chocolate">
                         <div class="card-body">
                             <h5 class="card-title cardTitulo">Intensa de Chocolate</h5>
-                            <p class="text-start cardTexto">$3.800</p>
+                            <p class="text-start cardTexto">G:$3.800 M:$3.300</p>
 
                         </div>
                     </div>
@@ -134,7 +135,7 @@
                         <img src="../fotos-juli/cardOreo.jpg" class="card-img-top bordcard" alt="Torta Oreo">
                         <div class="card-body">
                             <h5 class="card-title cardTitulo">Torta Oreo</h5>
-                            <p class="text-start cardTexto">$3.800</p>
+                            <p class="text-start cardTexto">G:$3.800 M:$3.300</p>
 
                         </div>
                     </div>
@@ -143,7 +144,7 @@
                         <img src="../fotos-juli/cardMarquise.jpg" class="card-img-top bordcard" alt="Torta Marquise de chocolate">
                         <div class="card-body">
                             <h5 class="card-title cardTitulo">Marquise de Chocolate</h5>
-                            <p class="text-start cardTexto">$3.600</p>
+                            <p class="text-start cardTexto">G:$3.600 M:$3.100</p>
 
                         </div>
                     </div>
@@ -152,7 +153,7 @@
                         <img src="../fotos-juli/cardChocoHibi.jpg" class="card-img-top bordcard" alt="Torta de chocolate e hibiscus">
                         <div class="card-body">
                             <h5 class="card-title cardTitulo">Chocolate e Hibiscus</h5>
-                            <p class="text-start cardTexto">$3.400</p>
+                            <p class="text-start cardTexto">G:$3.400 M:$2.900</p>
 
                         </div>
                     </div>
@@ -161,7 +162,7 @@
                         <img src="../fotos-juli/cardLemonPie.jpg" class="card-img-top bordcard" alt="Torta Lemon Pie">
                         <div class="card-body">
                             <h5 class="card-title cardTitulo">Lemon Pie</h5>
-                            <p class="text-start cardTexto">$3.300</p>
+                            <p class="text-start cardTexto">G:$3.300 M:$2.800</p>
 
                         </div>
                     </div>
@@ -170,7 +171,7 @@
                         <img src="../fotos-juli/cardPavlova.jpg" class="card-img-top bordcard" alt="Pavlova">
                         <div class="card-body">
                             <h5 class="card-title cardTitulo">Pavlova</h5>
-                            <p class="text-start cardTexto">$3.500</p>
+                            <p class="text-start cardTexto">G:$3.500 M:$3.000</p>
 
                         </div>
                     </div>
@@ -179,7 +180,7 @@
                         <img src="../fotos-juli/cardTorta.jpg" class="card-img-top bordcard" alt="Tortas Personalizadas">
                         <div class="card-body">
                             <h5 class="card-title cardTitulo">Tortas Personalizadas</h5>
-                            <p class="text-start cardTexto">$4.000</p>
+                            <p class="text-start cardTexto">G:$4.000 <br> M:$3.500</p>
 
                         </div>
                     </div>
@@ -187,8 +188,8 @@
                     <div class="card card3" style="width: 18rem;">
                         <img src="../fotos-juli/cardLetter.jpg" class="card-img-top bordcard" alt="Letter Cake">
                         <div class="card-body">
-                          <h5 class="card-title cardTitulo">Letter Cake</h5>
-                          <p class="text-start cardTexto">$4.000</p>
+                          <h5 class="card-title cardTitulo">Tortas Personalizadas</h5>
+                          <p class="text-start cardTexto">G:$4.000 <br> M:$3.500</p>
               
                         </div>
                       </div>
@@ -209,14 +210,14 @@
     <footer class="pie">
 
         <div class="container">
-            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 pie border-top">
+            <div class="d-flex flex-wrap justify-content-between align-items-center py-3 pie border-top">
                 <div class="col-md-4 d-flex align-items-center">
                 </div>
                 <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
                     <li class="ms-3"><a class="text-muted colorIcono" href="#"><i class="fa-brands fa-whatsapp"></i> 15555-5555 </a></li>
                     <li class="ms-3"><a class="text-muted colorIcono" href="#"><i class="fa-brands fa-instagram"></i>/Julieta Harari</a></li>
                 </ul>
-            </footer>
+            </div>
         </div>
 
     </footer>

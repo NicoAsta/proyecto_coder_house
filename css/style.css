@@ -8,6 +8,7 @@
 
 .padd {
   padding: 0 1.5rem;
+  color: #EA3253;
 }
 
 .dropdown-item:hover {
@@ -20,10 +21,13 @@
 }
 .fondoHeader a {
   font-size: 20px;
-  color: #EA3253;
 }
 .fondoHeader a:hover {
   color: white;
+}
+
+.activeColor {
+  color: #ffffff;
 }
 
 .buscador {
@@ -32,19 +36,23 @@
   width: 35rem;
 }
 
-footer {
+.icon {
+  color: #EA3253;
+}
+
+.pie {
   background-color: #F6C4B9;
   color: #3E4181;
 }
 @media screen and (max-width: 768px) {
-  footer .padreColumnas {
+  .pie .padreColumnas {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
   }
-  footer .mazo {
+  .pie .mazo {
     flex-direction: column;
   }
-  footer .card1, footer .card2, footer .card3 {
+  .pie .card1, .pie .card2, .pie .card3 {
     margin: 2rem 0;
   }
 }
@@ -102,11 +110,16 @@ footer {
   text-underline-offset: 0.5rem;
   text-decoration-style: wavy;
 }
+.subNav .activeDeco {
+  text-decoration: underline;
+  text-decoration-color: #3E4181;
+  text-underline-offset: 0.5rem;
+  text-decoration-style: wavy;
+}
 
 .titulo {
   color: #EA3253;
   padding: 3rem;
-  text-decoration: underline;
   text-align: center;
 }
 
@@ -137,8 +150,6 @@ footer {
   }
   .subNav li {
     display: inline-block;
-    margin: 0 1rem;
-    padding: 1rem 2rem;
   }
 }
 .misGustos {
@@ -176,8 +187,9 @@ footer {
 
 .main__video {
   display: flex;
-  width: 1000px;
-  height: 130px;
+  width: 100rem;
+  height: 30rem;
+  margin-bottom: 20rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -204,23 +216,16 @@ main {
   main .mazo {
     flex-direction: column;
   }
-  main .card1, main .card2, main .card3 {
-    margin: 2rem 0;
-  }
 }
 
 .carouselContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 7rem 30rem;
 }
 .carouselContainer h5 {
   font-size: 4rem;
   font-weight: bold;
-  color: #EA3253;
-}
-.carouselContainer .flechita {
   color: #EA3253;
 }
 
@@ -239,7 +244,7 @@ main {
 
 .columnaUno, .columnaDos, .columnaTres {
   display: inline-block;
-  padding: 2rem 0;
+  margin: 2rem;
   width: 200px;
   color: #3E4181;
 }
@@ -250,7 +255,6 @@ main {
 
 .columnaUno {
   display: inline-block;
-  padding: 2rem 0;
   width: 200px;
   color: #3E4181;
 }
@@ -264,7 +268,6 @@ main {
 
 .columnaDos {
   display: inline-block;
-  padding: 2rem 0;
   width: 200px;
   color: #3E4181;
 }
@@ -278,7 +281,6 @@ main {
 
 .columnaTres {
   display: inline-block;
-  padding: 2rem 0;
   width: 200px;
   color: #3E4181;
 }
@@ -313,17 +315,21 @@ main {
   border-radius: 1rem;
   align-items: flex-start;
   text-align: start;
+  transition: all 400ms ease;
+}
+.card1:hover, .card2:hover, .card3:hover {
+  box-shadow: 5px 5px 10px #EA3253;
 }
 
 .cardTitulo {
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: #EA3253;
   align-items: flex-start;
   text-align: start;
 }
 
 .cardTexto {
-  font-size: 2.3rem;
+  font-size: 1.6rem;
   align-items: flex-start;
   text-align: start;
   color: #EA3253;
@@ -387,10 +393,6 @@ html {
 
 .bordcard {
   border-radius: 10%;
-}
-
-.ig {
-  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

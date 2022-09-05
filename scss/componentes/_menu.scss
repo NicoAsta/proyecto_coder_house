@@ -31,12 +31,16 @@
             
     }
 
+    .activeDeco {text-decoration: underline;
+        text-decoration-color:nth($colors, 3 );
+        text-underline-offset: 0.5rem;
+        text-decoration-style:wavy ;}
+
 }
 
  .titulo{
     color: nth($colors , 2);
     padding: 3rem;
-    text-decoration: underline;
     text-align: center
 }
 
@@ -67,6 +71,5 @@
     .cardPadre {flex-direction: column;}
     .subNav li {
         display: inline-block;
-        margin: 0 1rem;
-        padding: 1rem 2rem;
+        
 }}
