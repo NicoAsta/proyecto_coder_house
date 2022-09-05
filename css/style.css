@@ -219,14 +219,8 @@ main {
 }
 
 .carouselContainer {
-  display: flex;
   justify-content: center;
   align-items: center;
-}
-.carouselContainer h5 {
-  font-size: 4rem;
-  font-weight: bold;
-  color: #EA3253;
 }
 
 .padreColumnas {

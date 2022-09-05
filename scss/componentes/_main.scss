@@ -14,16 +14,9 @@ main {
 }
 
 .carouselContainer {
-    display: flex;
     justify-content: center;
     align-items: center;
     // padding: 7rem 30rem;
-    
-        h5 {
-            font-size: 4rem;
-            font-weight: bold;
-            color: nth($colors, 2 );
-        }
         
 }
 
@@ -88,7 +81,8 @@ main {
     color: nth($colors , 3 );
     font-size: 1.5rem;
     grid-area: columnaDos;
-}}
+            }
+}
 
 .columnaTres 
 
