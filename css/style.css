@@ -313,6 +313,7 @@ main {
 }
 .card1:hover, .card2:hover, .card3:hover {
   box-shadow: 5px 5px 10px #EA3253;
+  transform: translateY(-3%);
 }
 
 .cardTitulo {

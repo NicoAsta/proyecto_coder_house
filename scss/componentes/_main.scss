@@ -53,10 +53,6 @@ main {
     display:map-get($columna, tipo);
     width: map-get($columna , ancho ) ;
     color: map-get($columna , col );
-    
-    
-    
-
 
     p{
     display: block;
@@ -123,9 +119,14 @@ p{
     align-items: flex-start;
     text-align:start;
     transition: all 400ms ease;
-    &:hover{box-shadow: 5px 5px 10px #EA3253;}
+    
+    &:hover{
+        box-shadow: 5px 5px 10px #EA3253;
+        transform:translateY(-3%);}
+
    
  }
+
 
 .cardTitulo {font-size: 2rem;
     color: nth($colors , 2 );
