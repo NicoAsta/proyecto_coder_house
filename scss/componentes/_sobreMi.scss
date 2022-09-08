@@ -42,10 +42,14 @@
 }
 
 
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 968px) {
 
     .misGustos{flex-direction: column;}
     .fotoPerfil {margin: 3rem 0}
-    .intro {margin: 0 0 3rem 0;
-    max-width: 50%;}
+    .intro {margin: 0 0 3rem 0; max-width: 50%;}
+    .main__video {flex-direction: column;
+                    max-width: 80%;
+                    align-items: center;
+                    justify-content: center;}
 }
